@@ -1,0 +1,17 @@
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## IntractiveMap - 15 September 2020
+
+```{r echo=FALSE}
+library(leaflet)
+map <-  leaflet() %>%
+        addTiles() %>%
+        addMarkers(lng=-51.670, lat=64.151, popup="A place that I will probabaly will never visit")%>%
+        addMarkers(lng=-51.10187531, lat=69.21720178, popup="Another spot that I will probabaly will never visit")
+
+
+map
+```
